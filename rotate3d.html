@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로테이트 3D</title>
+    <style>
+      #container {
+        width: 800px;
+        margin: 20px auto;
+      }
+      .origin {
+        width: 100px;
+        height: 100px;
+        margin: 40px;
+        float: left;
+        border: 1px solid black;
+        /* perspective div안이 아니라 바깥 origin에 먹여야함 */
+        perspective: 100px;
+      }
+      .origin > div {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(90, 185, 154);
+        transition: all 1s;
+      }
+      #rotatex:hover {
+        transform: skewX(45deg);
+      }
+      #rotatey:hover {
+        transform: skewY(55deg);
+      }
+      #rotatez:hover {
+        transform: rotateZ(55deg);
+      }
+      #rotatexyz:hover {
+        transform: rotate3D(2.5, 1.2, -1.5, 55deg);
+      }
+      /* rotate 3D는 <X,Y,Z,각도> 입력 */
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="origin">
+        <div id="rotatex"></div>
+      </div>
+      <div class="origin">
+        <div id="rotatey"></div>
+      </div>
+      <div class="origin">
+        <div id="rotatez"></div>
+      </div>
+      <div class="origin">
+        <div id="rotatexyz"></div>
+      </div>
+    </div>
+  </body>
+</html>

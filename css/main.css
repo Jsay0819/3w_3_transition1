@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* 보라 도형 */
+
+#container {
+  width: 800px;
+  height: 200px;
+  margin: 20px auto;
+  background-color: antiquewhite;
+}
+.origin {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+  margin: 40px;
+}
+.origin > div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(154, 115, 190);
+}
+
+/* .movex:hover {
+    transform: translateX(50px);}*/
+/* -50 왼쪽, 50 오른쪽 */
+
+/* .movey:hover {
+    transform: translateY(-50px);}*/
+/* -50px 주면 위로가고 50px 주면 아래로감 */
+
+/* .movexy:hover {
+     transform: translate(30px, 50px);} */
+/* translate 안에 X축, Y축 값 입력하면 됨 */
+
+.movex:hover {
+  transform: scaleX(2);
+}
+.movey:hover {
+  transform: scaleY(1.5);
+}
+.movexy:hover {
+  transform: scale(2, 4);
+}
+
+/* 선인장 */
+
+#container2 {
+  width: 800px;
+  margin: 20px auto;
+  background-color: chartreuse;
+}
+.origin2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+  margin: 40px;
+}
+
+#rotate1:hover {
+  transform: rotate(50deg);
+  /* 시계 방향 */
+}
+#rotate2:hover {
+  transform: rotate(-40deg);
+  /* 반시계 방향 */
+}
+
+/* 선인장 3D */
+
+#container3 {
+    width: 800px;
+    margin: 20px auto;
+    background-color: chartreuse;
+  }
+#rotate3:hover {
+    transform: rotateX(40deg);
+}
+#per {
+    perspective: 100px;
+}

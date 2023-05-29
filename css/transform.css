@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* CSS 변형 함수 익히기 */
+.container {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.origin {
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(185, 164, 135);
+  width: 250px;
+  height: 50px;
+  margin: 100px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.origin:hover {
+  transform: skew(-40deg) scale(1.5);
+transition: 1s;
+}
+
+/*  */
